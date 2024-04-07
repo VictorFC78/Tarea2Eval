@@ -1,0 +1,31 @@
+﻿<Window x:Class="Tarea2Eval.gui.ConsultarItinerario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea2Eval.gui"
+        mc:Ignorable="d"
+        Title="ConsultarItinerario" Height="583" Width="625">
+    <Grid Height="547" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="223*"/>
+            <RowDefinition Height="447*"/>
+        </Grid.RowDefinitions>
+        <Label Content="LINEA Nº:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="138" FontSize="24"/>
+        <ComboBox x:Name="cmb" ItemsSource="{Binding}" DisplayMemberPath="Id" HorizontalAlignment="Left" Margin="153,10,0,0" VerticalAlignment="Top" Width="120" Height="42" FontSize="24" SelectionChanged="cmb_SelectionChanged"/>
+        <Label Content="MUNICIPIO SALIDA" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="247" FontSize="24"/>
+        <Label x:Name="lblMS" Content="{Binding}" HorizontalAlignment="Left" Margin="262,71,0,0" VerticalAlignment="Top" Width="327" FontSize="24" Height="42"/>
+        <Label Content="MUNICIPIO LLEGADA" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="247" FontSize="24"/>
+        <Label x:Name="lblML"  Content="{Binding}" HorizontalAlignment="Left" Margin="262,143,0,0" VerticalAlignment="Top" Width="327" FontSize="24" Height="42"/>
+        <DataGrid x:Name="dg" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,8,11,136" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Linea" Binding="{Binding Path=IdLinea}" FontSize="20" />
+                <DataGridTextColumn Header="Municipio Parada" Binding="{Binding Path=Municipio}" FontSize="20" />
+                <DataGridTextColumn Header="Intervalo" Binding="{Binding Path=Intervalo, StringFormat=HH:mm}" FontSize="20" />
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Salir" HorizontalAlignment="Left" Margin="511,295,0,0" VerticalAlignment="Top" Height="40" Width="79" FontSize="20" Click="Button_Click" Grid.Row="1"/>
+
+    </Grid>
+</Window>
