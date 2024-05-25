@@ -1,0 +1,11 @@
+Id;MunSalida;MunLlegada;HoraSalida;Intervalo
+1;Gijón;Gozón;7:00;1:00
+2;Gozón;Gijón;7:30;1:00
+3;Oviedo;Gozón;7:00;1:00
+4;Gozón;Oviedo;7:00;1:00
+5;Avilés;Gijón;8:00;1:15
+6;Gijón;Avilés;8:00;1:15
+7;Avilés;Oviedo;7:00;2:00
+8;Oviedo;Avilés;8:00;2:00
+9;Avilés;Tapia de Casariego;9:00;2:00
+10;Tapia de Casariego;Avilés;10:00;2:00

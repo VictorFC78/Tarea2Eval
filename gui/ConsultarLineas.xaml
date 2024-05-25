@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tarea2Eval.gui"
         mc:Ignorable="d"
-        Title="ConsultarLineas" Height="429" Width="451">
+        Title="ConsultarLineas" Height="429" Width="702">
     <Grid>
-        <DataGrid x:Name="dg" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,10,23,0" Height="314" VerticalAlignment="Top" >
+        <DataGrid x:Name="dg" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,10,36,0" Height="314" VerticalAlignment="Top" FontSize="20" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Linea" Binding="{Binding Path=Id}"/>
                 <DataGridTextColumn Header="Municipio Salida" Binding="{Binding Path=MunSalida}"/>
@@ -16,7 +16,7 @@
                 <DataGridTextColumn Header="Intervalos" Binding="{Binding Path=Intervalo , StringFormat=HH:mm}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Salir" HorizontalAlignment="Left" Margin="310,340,0,0" VerticalAlignment="Top" Width="103" Height="36" Click="Button_Click"/>
+        <Button Content="Salir" HorizontalAlignment="Left" Margin="542,340,0,0" VerticalAlignment="Top" Width="103" Height="36" Click="Button_Click" FontSize="20"/>
 
     </Grid>
 </Window>

@@ -5,19 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tarea2Eval.gui"
         mc:Ignorable="d"
-        Title="BajaLInea" Height="450" Width="800">
+        Title="BajaLInea" Height="478" Width="800">
     <Grid HorizontalAlignment="Left" Width="800">
-        <DataGrid x:Name="dg"  ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="0,24,26,80" HorizontalAlignment="Right" Width="753">
+        <DataGrid x:Name="dg"  ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="0,24,26,111" HorizontalAlignment="Right" Width="753" FontSize="20">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Linea"  Binding="{Binding Path=Id}" FontSize="20"/>
-                <DataGridTextColumn Header="Municipio Salida" Binding="{Binding Path=MunSalida}" FontSize="20"/>
-                <DataGridTextColumn Header="Municipio Llegada" Binding="{Binding Path=MunLlegada}" FontSize="20"/>
-                <DataGridTextColumn Header="Hora Salida" Binding="{Binding Path=HoraSalida, StringFormat=HH:mm}" FontSize="20"/>
-                <DataGridTextColumn Header="Intervalo" Binding="{Binding Path=Intervalo, StringFormat=HH:mm}" FontSize="20"/>
+                <DataGridTextColumn Header="Linea"   Binding="{Binding Path=Id}"/>
+                <DataGridTextColumn Header="Municipio Salida" Binding="{Binding Path=MunSalida}"/>
+                <DataGridTextColumn Header="Municipio Llegada" Binding="{Binding Path=MunLlegada}"/>
+                <DataGridTextColumn Header="Hora Salida" Binding="{Binding Path=HoraSalida, StringFormat=HH:mm}"/>
+                <DataGridTextColumn Header="Intervalo" Binding="{Binding Path=Intervalo, StringFormat=HH:mm}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="506,379,0,0" VerticalAlignment="Top" Width="113" Height="35" Click="btnEliminar_Click"/>
-        <Button x:Name="btnCancelar"  Content="Cancelar" Margin="635,379,52,0" VerticalAlignment="Top" Height="35" Click="btnCancelar_Click"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="506,379,0,0" VerticalAlignment="Top" Width="113" Height="35" Click="btnEliminar_Click" FontSize="20"/>
+        <Button x:Name="btnCancelar"  Content="Salir" Margin="635,379,52,0" VerticalAlignment="Top" Height="35" Click="btnCancelar_Click" FontSize="20"/>
 
     </Grid>
 </Window>

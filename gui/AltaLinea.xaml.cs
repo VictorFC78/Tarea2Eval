@@ -80,7 +80,7 @@ namespace Tarea2Eval.gui
                     Linea linea = new Linea(id + 1, municipioSalida.Nombre, municipiollegada.Nombre, tiempoSalida, tiempollegda);
                     LogicaNegocio.anaidirLinea(linea);
                     LogicaNegocio.anaidirLineaCsv();
-                    this.Close();
+                 
                 }
             }
             else

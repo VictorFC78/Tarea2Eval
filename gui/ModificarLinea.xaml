@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tarea2Eval.gui"
         mc:Ignorable="d"
-        Title="ModificarLinea" Height="450" Width="945">
-    <Grid>
-        <Button Content="Modificar" HorizontalAlignment="Left" Margin="678,344,0,0" VerticalAlignment="Top" Width="104" Height="40" RenderTransformOrigin="0.088,0.571" Click="Button_Click_1"/>
-        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="811,344,0,0" VerticalAlignment="Top" Width="104" Height="40" RenderTransformOrigin="0.088,0.571" Click="Button_Click"/>
-        <DataGrid x:Name="dg" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="26,23,530,100">
+        Title="ModificarLinea" Height="450" Width="1187">
+    <Grid Margin="2,2,-2,-2">
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="907,346,0,0" VerticalAlignment="Top" Width="104" Height="40" RenderTransformOrigin="0.088,0.571" Click="Button_Click_1" FontSize="20"/>
+        <Button Content="Salir" HorizontalAlignment="Left" Margin="1040,346,0,0" VerticalAlignment="Top" Width="104" Height="40" RenderTransformOrigin="0.088,0.571" Click="Button_Click" FontSize="20"/>
+        <DataGrid x:Name="dg" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="26,23,520,100" FontSize="20">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Linea" Binding="{Binding Path=Id}"/>
                 <DataGridTextColumn Header="Municipio Salida" Binding="{Binding Path=MunSalida}"/>
@@ -18,18 +18,18 @@
                 <DataGridTextColumn Header="Intervalo" Binding="{Binding Path=Intervalo, StringFormat=HH:mm}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <ComboBox x:Name="cmbMS" ItemsSource="{Binding}" DisplayMemberPath="Nombre" HorizontalAlignment="Left" Margin="657,25,0,0" VerticalAlignment="Top" Width="258" Height="35"/>
-        <Label Content="Municipio Salida" HorizontalAlignment="Left" Margin="445,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.282,0.112" Width="193" FontSize="20"/>
-        <ComboBox x:Name="cmbML" ItemsSource="{Binding}" DisplayMemberPath="Nombre"  HorizontalAlignment="Left" Margin="657,80,0,0" VerticalAlignment="Top" Width="258" Height="35"/>
-        <Label Content="Municipio Llegada" HorizontalAlignment="Left" Margin="445,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.282,0.112" Width="193" FontSize="20"/>
-        <Label Content="Hora Salida" HorizontalAlignment="Left" Margin="459,142,0,0" VerticalAlignment="Top" Width="205" FontSize="24"/>
-        <ComboBox x:Name="cmbHS" ItemsSource="{Binding}"  HorizontalAlignment="Left" Margin="678,147,0,0" VerticalAlignment="Top" Width="54" Height="32" FontSize="20"/>
-        <Label Content=":" HorizontalAlignment="Left" Margin="754,142,0,0" VerticalAlignment="Top" Width="28" FontSize="24"/>
-        <ComboBox x:Name="cmbMinS" ItemsSource="{Binding}"  HorizontalAlignment="Left" Margin="786,147,0,0" VerticalAlignment="Top" Width="56" Height="32" FontSize="20"/>
-        <Label Content="Intervalo" HorizontalAlignment="Left" Margin="459,212,0,0" VerticalAlignment="Top" Width="205" FontSize="24"/>
-        <ComboBox x:Name="cmbIH" ItemsSource="{Binding}"  HorizontalAlignment="Left" Margin="678,217,0,0" VerticalAlignment="Top" Width="54" Height="32" FontSize="20"/>
-        <Label Content=":" HorizontalAlignment="Left" Margin="754,212,0,0" VerticalAlignment="Top" Width="28" FontSize="24"/>
-        <ComboBox x:Name="cmbIM" ItemsSource="{Binding}"  HorizontalAlignment="Left" Margin="786,217,0,0" VerticalAlignment="Top" Width="56" Height="32" FontSize="20"/>
+        <ComboBox x:Name="cmbMS" ItemsSource="{Binding}" DisplayMemberPath="Nombre" HorizontalAlignment="Left" Margin="886,27,0,0" VerticalAlignment="Top" Width="258" Height="35" FontSize="20"/>
+        <Label Content="Municipio Salida" HorizontalAlignment="Left" Margin="674,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.282,0.112" Width="193" FontSize="20"/>
+        <ComboBox x:Name="cmbML" ItemsSource="{Binding}" DisplayMemberPath="Nombre"  HorizontalAlignment="Left" Margin="886,82,0,0" VerticalAlignment="Top" Width="258" Height="35" FontSize="20"/>
+        <Label Content="Municipio Llegada" HorizontalAlignment="Left" Margin="674,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.282,0.112" Width="193" FontSize="20"/>
+        <Label Content="Hora Salida" HorizontalAlignment="Left" Margin="674,148,0,0" VerticalAlignment="Top" Width="205" FontSize="20"/>
+        <ComboBox x:Name="cmbHS" ItemsSource="{Binding}"  HorizontalAlignment="Left" Margin="907,149,0,0" VerticalAlignment="Top" Width="54" Height="32" FontSize="20"/>
+        <Label Content=":" HorizontalAlignment="Left" Margin="983,144,0,0" VerticalAlignment="Top" Width="28" FontSize="20"/>
+        <ComboBox x:Name="cmbMinS" ItemsSource="{Binding}"  HorizontalAlignment="Left" Margin="1015,149,0,0" VerticalAlignment="Top" Width="56" Height="32" FontSize="20"/>
+        <Label Content="Intervalo" HorizontalAlignment="Left" Margin="674,214,0,0" VerticalAlignment="Top" Width="205" FontSize="20"/>
+        <ComboBox x:Name="cmbIH" ItemsSource="{Binding}"  HorizontalAlignment="Left" Margin="907,219,0,0" VerticalAlignment="Top" Width="54" Height="32" FontSize="20"/>
+        <Label Content=":" HorizontalAlignment="Left" Margin="983,214,0,0" VerticalAlignment="Top" Width="28" FontSize="20"/>
+        <ComboBox x:Name="cmbIM" ItemsSource="{Binding}" Margin="1015,219,94,0" VerticalAlignment="Top" Height="32" FontSize="20"/>
 
     </Grid>
 </Window>

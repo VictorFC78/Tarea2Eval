@@ -13,7 +13,7 @@
         <Label x:Name="lblMS" Content="{Binding}" HorizontalAlignment="Left" Margin="262,71,0,0" VerticalAlignment="Top" Width="327" FontSize="20" Height="42"/>
         <Label Content="Municipio Llegada" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Width="208" FontSize="20"/>
         <Label x:Name="lblML"  Content="{Binding}" HorizontalAlignment="Left" Margin="262,118,0,0" VerticalAlignment="Top" Width="327" FontSize="20" Height="42"/>
-        <DataGrid x:Name="dg" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,165,466,91">
+        <DataGrid x:Name="dg" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,165,466,91" FontSize="20">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Linea" Binding="{Binding IdLinea}" FontSize="20" />
                 <DataGridTextColumn Header="Municipio Parada" Binding="{Binding Municipio}" FontSize="20" />

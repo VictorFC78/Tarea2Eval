@@ -7,25 +7,25 @@
         mc:Ignorable="d"
         Title="AltaItinerario" Height="369" Width="950">
     <Grid Height="351" VerticalAlignment="Top">
-        <Label Content="Municipio Parada" HorizontalAlignment="Left" Margin="451,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="214" FontSize="24"/>
-        <ComboBox x:Name="cmbMun" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="670,15,0,0" VerticalAlignment="Top" Width="220" FontSize="24"/>
-        <Label Content="Intervalo" HorizontalAlignment="Left" Margin="451,67,0,0" VerticalAlignment="Top" Width="205" FontSize="24"/>
+        <Label Content="Municipio Parada" HorizontalAlignment="Left" Margin="451,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="214" FontSize="20"/>
+        <ComboBox x:Name="cmbMun" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="670,15,0,0" VerticalAlignment="Top" Width="220" FontSize="20"/>
+        <Label Content="Intervalo" HorizontalAlignment="Left" Margin="451,67,0,0" VerticalAlignment="Top" Width="205" FontSize="20"/>
         <ComboBox x:Name="cmbHorLle" ItemsSource="{Binding}"  HorizontalAlignment="Left" Margin="670,72,0,0" VerticalAlignment="Top" Width="54" Height="32" FontSize="20"/>
-        <Label Content=":" HorizontalAlignment="Left" Margin="746,67,0,0" VerticalAlignment="Top" Width="28" FontSize="24"/>
+        <Label Content=":" HorizontalAlignment="Left" Margin="746,67,0,0" VerticalAlignment="Top" Width="28" FontSize="20"/>
         <ComboBox x:Name="cmbMinLle" ItemsSource="{Binding}"  HorizontalAlignment="Left" Margin="778,72,0,0" VerticalAlignment="Top" Width="56" Height="32" FontSize="20"/>
-        <Label Content="Linea" HorizontalAlignment="Left" Margin="8,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="78" FontSize="24"/>
-        <ComboBox x:Name="cmbLinea" ItemsSource="{Binding}" DisplayMemberPath="Id" HorizontalAlignment="Left" Margin="110,18,0,0" VerticalAlignment="Top" Width="103" FontSize="24" SelectionChanged="cmbLinea_SelectionChanged"/>
-        <Label Content="Municipio Salida" HorizontalAlignment="Left" Margin="8,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="205" FontSize="24"/>
-        <Label Content="Municipio LLegada" HorizontalAlignment="Left" Margin="8,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="214" FontSize="24"/>
-        <Button Content="Añadir" HorizontalAlignment="Left" Margin="638,266,0,0" VerticalAlignment="Top" Height="44" Width="118" Click="Button_Click"/>
-        <Button Content="Salir" HorizontalAlignment="Left" Margin="772,266,0,0" VerticalAlignment="Top" Height="44" Width="118" Click="Button_Click_1"/>
-        <Label x:Name="lblHS"  Content="{Binding}" HorizontalAlignment="Left" Margin="227,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="205" FontSize="24" Height="42"/>
-        <Label x:Name="lblHL"  Content="{Binding}"  HorizontalAlignment="Left" Margin="227,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="214" FontSize="24" Height="42"/>
-        <DataGrid x:Name="dg"  ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,180,457,41">
+        <Label Content="Linea" HorizontalAlignment="Left" Margin="8,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="78" FontSize="20"/>
+        <ComboBox x:Name="cmbLinea" ItemsSource="{Binding}" DisplayMemberPath="Id" HorizontalAlignment="Left" Margin="110,18,0,0" VerticalAlignment="Top" Width="103" FontSize="20" SelectionChanged="cmbLinea_SelectionChanged"/>
+        <Label Content="Municipio Salida" HorizontalAlignment="Left" Margin="8,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="205" FontSize="20"/>
+        <Label Content="Municipio LLegada" HorizontalAlignment="Left" Margin="8,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="214" FontSize="20"/>
+        <Button Content="Añadir" HorizontalAlignment="Left" Margin="638,266,0,0" VerticalAlignment="Top" Height="44" Width="118" Click="Button_Click" FontSize="20"/>
+        <Button Content="Salir" HorizontalAlignment="Left" Margin="772,266,0,0" VerticalAlignment="Top" Height="44" Width="118" Click="Button_Click_1" FontSize="20"/>
+        <Label x:Name="lblHS"  Content="{Binding}" HorizontalAlignment="Left" Margin="227,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="205" FontSize="20" Height="42"/>
+        <Label x:Name="lblHL"  Content="{Binding}"  HorizontalAlignment="Left" Margin="227,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.318,-0.156" Width="214" FontSize="20" Height="42"/>
+        <DataGrid x:Name="dg"  ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,180,457,41" FontSize="20">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="IdLinea" Binding="{Binding Path=IdLinea}"/>
-                <DataGridTextColumn Header="Municipio" Binding="{Binding Path=Municipio}"/>
-                <DataGridTextColumn Header="Intervalo" Binding="{Binding Path=Intervalo, StringFormat=HH:mm}"/>
+                <DataGridTextColumn Header="IdLinea" Binding="{Binding Path=IdLinea}" FontSize="16"/>
+                <DataGridTextColumn Header="Municipio" Binding="{Binding Path=Municipio}" FontSize="16"/>
+                <DataGridTextColumn Header="Intervalo" Binding="{Binding Path=Intervalo, StringFormat=HH:mm}" FontSize="16"/>
             </DataGrid.Columns>
         </DataGrid>
 

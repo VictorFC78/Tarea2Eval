@@ -11,13 +11,13 @@
             <RowDefinition Height="223*"/>
             <RowDefinition Height="447*"/>
         </Grid.RowDefinitions>
-        <Label Content="LINEA Nº:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="138" FontSize="24"/>
-        <ComboBox x:Name="cmb" ItemsSource="{Binding}" DisplayMemberPath="Id" HorizontalAlignment="Left" Margin="153,10,0,0" VerticalAlignment="Top" Width="120" Height="42" FontSize="24" SelectionChanged="cmb_SelectionChanged"/>
-        <Label Content="MUNICIPIO SALIDA" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="247" FontSize="24"/>
-        <Label x:Name="lblMS" Content="{Binding}" HorizontalAlignment="Left" Margin="262,71,0,0" VerticalAlignment="Top" Width="327" FontSize="24" Height="42"/>
-        <Label Content="MUNICIPIO LLEGADA" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="247" FontSize="24"/>
-        <Label x:Name="lblML"  Content="{Binding}" HorizontalAlignment="Left" Margin="262,143,0,0" VerticalAlignment="Top" Width="327" FontSize="24" Height="42"/>
-        <DataGrid x:Name="dg" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,8,11,136" Grid.Row="1">
+        <Label Content="LINEA Nº:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="138" FontSize="20"/>
+        <ComboBox x:Name="cmb" ItemsSource="{Binding}" DisplayMemberPath="Id" HorizontalAlignment="Left" Margin="153,10,0,0" VerticalAlignment="Top" Width="120" Height="42" FontSize="20" SelectionChanged="cmb_SelectionChanged"/>
+        <Label Content="MUNICIPIO SALIDA" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="247" FontSize="20"/>
+        <Label x:Name="lblMS" Content="{Binding}" HorizontalAlignment="Left" Margin="262,71,0,0" VerticalAlignment="Top" Width="327" FontSize="20" Height="42"/>
+        <Label Content="MUNICIPIO LLEGADA" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="247" FontSize="20"/>
+        <Label x:Name="lblML"  Content="{Binding}" HorizontalAlignment="Left" Margin="262,143,0,0" VerticalAlignment="Top" Width="327" FontSize="20" Height="42"/>
+        <DataGrid x:Name="dg" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,8,11,136" Grid.Row="1" FontSize="20">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Linea" Binding="{Binding Path=IdLinea}" FontSize="20" />
                 <DataGridTextColumn Header="Municipio Parada" Binding="{Binding Path=Municipio}" FontSize="20" />
